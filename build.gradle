@@ -1,0 +1,66 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url 'http://sevntu-checkstyle.github.com/sevntu.checkstyle/maven2' }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.5.RELEASE")
+    }
+}
+
+
+plugins {
+    id 'com.jfrog.bintray' version '1.7.3' apply false
+    id 'com.github.ben-manes.versions' version '0.15.0' apply false
+    id 'me.tatarka.retrolambda' version '3.7.0' apply false
+    id 'com.github.hierynomus.license' version '0.14.0' apply false
+    id 'net.nemerosa.versioning' version '2.6.1' apply false
+    id 'org.sonarqube' version '2.5'
+}
+
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+bootJar {
+    baseName = 'gs-spring-boot'
+    version =  '0.1.0'
+}
+
+group 'com.edutilos'
+version '1.0-SNAPSHOT'
+
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.kordamp.bootstrapfx:bootstrapfx-core:0.2.4'
+//    compile group: 'com.miglayout', name: 'miglayout', version: '3.7.4'
+    compile group: 'com.miglayout', name: 'miglayout-javafx', version: '5.2'
+// https://mvnrepository.com/artifact/de.saxsys/mvvmfx
+    compile group: 'de.saxsys', name: 'mvvmfx', version: '1.7.0'
+//    compile group: 'de.saxsys', name: 'mvvmfx-spring-boot', version: '1.8.0-SNAPSHOT'
+// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.1.1.RELEASE'
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile files("libs/mvvmfx-spring-boot-1.8.0-SNAPSHOT.jar")
+    // https://mvnrepository.com/artifact/com.jfoenix/jfoenix
+    compile group: 'com.jfoenix', name: 'jfoenix', version: '8.0.8'
+// https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.4'
+    compile 'io.datafx:datafx:8.0.1'
+    compile 'io.datafx:flow:8.0.1'
+
+// https://mvnrepository.com/artifact/de.jensd/fontawesomefx
+    compile group: 'de.jensd', name: 'fontawesomefx', version: '8.9'
+
+}

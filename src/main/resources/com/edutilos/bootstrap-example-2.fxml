@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edutilos.controller.BootstrapExample2Controller">
+   <children>
+      <Label fx:id="lblTitle" layoutX="198.0" layoutY="34.0" prefHeight="15.0" prefWidth="122.0" text="Sample Form">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblId" layoutX="45.0" layoutY="73.0" prefHeight="15.0" prefWidth="142.0" text="Id: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldId" layoutX="235.0" layoutY="68.0" prefHeight="25.0" prefWidth="337.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblName" layoutX="45.0" layoutY="122.0" prefHeight="15.0" prefWidth="142.0" text="Name: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldName" layoutX="235.0" layoutY="117.0" prefHeight="25.0" prefWidth="337.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblAge" layoutX="45.0" layoutY="170.0" prefHeight="15.0" prefWidth="142.0" text="Age: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldAge" layoutX="235.0" layoutY="165.0" prefHeight="25.0" prefWidth="337.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="fieldWage" layoutX="235.0" layoutY="216.0" prefHeight="25.0" prefWidth="337.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblWage" layoutX="45.0" layoutY="221.0" prefHeight="15.0" prefWidth="142.0" text="Wage: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldActive" layoutX="236.0" layoutY="260.0" prefHeight="25.0" prefWidth="337.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblActive" layoutX="46.0" layoutY="265.0" prefHeight="15.0" prefWidth="142.0" text="Active: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancel" layoutX="486.0" layoutY="327.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="Cancel">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnClear" layoutX="390.0" layoutY="327.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Clear">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnOk" layoutX="297.0" layoutY="327.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="OK">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
